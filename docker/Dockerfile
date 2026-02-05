@@ -14,3 +14,8 @@ RUN pip3 install --no-cache-dir numpy scipy matplotlib --break-system-packages
 RUN echo "source /opt/ros/jazzy/setup.bash" >> ~/.bashrc
 
 WORKDIR /workspace
+
+# ติดตั้ง Foxglove Bridge สำหรับส่งข้อมูล
+RUN apt-get update && apt-get install -y \
+    ros-jazzy-foxglove-bridge \
+    && rm -rf /var/lib/apt/lists/*
