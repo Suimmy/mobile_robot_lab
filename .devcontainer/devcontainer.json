@@ -1,0 +1,15 @@
+{
+    "name": "ROS 2 Jazzy Lab",
+    "dockerComposeFile": ["../compose.yaml"],
+    "service": "ros2_lab",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-python.python",
+                "ethan-hurvey.vscode-ros"
+            ]
+        }
+    }
+}
